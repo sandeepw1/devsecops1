@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage('Build Docker Image'){
       steps{
-        sh 'docker build -t testprj:$BUILD_NUMBER'      
+        sh 'docker build -t testprj:$BUILD_NUMBER .'      
       }
    }
     stage('Test Image'){
