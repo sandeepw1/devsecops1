@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    registry = sandeepwalvekar/devsecops1
+    registry = "sandeepwalvekar/devsecops1"
     registryCredential = "sandeepwalvekar"
     dockerImage = ''
   }
